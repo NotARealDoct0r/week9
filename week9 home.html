@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--declaring html and setting language to English-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 HW</title>
+    <!--using HTML-5 shortcut: setting display width to be set to proportionate with the device being used by user-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!--relationship is same as css except this time, using bootstrap--> 
+    <style>
+        div {
+            border-style: solid;
+            border-color: black;
+        }
+        
+        body {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/000/273/920/original/deep-ocean-background-vector.jpg);
+        }
+
+        .container, .container-fluid {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+    <!--setting border to have solid black + background image + changing font size and color-->
+</head>
+<body class="container">
+   <!--setting the body to be a 'container'-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">L33tH@xor</a>
+        <!--creating a navigation toolbar and setting the 'main title' to be directed to class notes (HTML version)-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+            aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <!--copied class material to create a dropdown menu-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="./week9 home.html">Don't click here!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./week9 don't click here!.html">Nor this one!</a>
+                </li>
+                <!--created 2 links for 2 pages-->
+                <li class="nav-item dropdown">
+                    <a class ="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Secrets
+                    </a>
+                    <!--using an anchor to tie the code above with the dropdown nav menu-->
+                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Pew Pew</a>
+                        <a class="dropdown-item" href="#">Lazers</a>
+                        <a class="dropdown-item" href="#">??????</a>
+                        <!--3 random 'items' with humor-->
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="alert alert-danger">
+        Dangerous page loaded... tread carefully xD
+    </div>
+    <div class="alert alert-warning">
+        Warning... warning... week 9 hw stuff displayed!
+    </div>
+    <!--some random variations / possibilities in terms of built in bootstrap alerts-->
+    <button class="btn btn-warning">Immediate eject button</button>
+    <br><br>
+    
+    <h3>My favorite soccer players <span class="badge badge-primary">Top 3</span></h3>
+    <!--similarly except with a button + notification like display-->
+    <table class="table table-dark table-hover">
+    <!--using a 'hover' feature to color code items being selected-->
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Team</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Son Heung Min</th>
+            <th>Tottenham Hotspur F.C.</th>
+        </tr>
+        <tr>
+            <th>10</th>
+            <th>Lionel Messi</th>
+            <th>Paris Saint-Germain F.C.</th>
+        </tr>
+        <tr>
+            <th>7</th>
+            <th>Cristiano Ronaldo</th>
+            <th>Al-Nassr F.C.</th>
+        </tr>
+    </table>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                Being
+            </div>
+            <div class="col-lg-4">
+                Random
+            </div>
+            <div class="col-lg-2">
+                For
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                Self
+            </div>
+            <div class="col-sm">
+                Amusement
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-md-8">
+                        Thank
+                    </div>
+                    <div class="col-md-4">
+                        you!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--different options available in terms of sizing and when to adapt / respond in terms of display 
+        (based on device / user's display size)-->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!--referencing jquery and bootstrap bundle-->
+</body>
+</html>

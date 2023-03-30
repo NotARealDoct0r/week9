@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 HW</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"> 
+    <style>
+        div {
+            border-style: solid;
+            border-color: black;
+        }
+
+        body {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/000/273/920/original/deep-ocean-background-vector.jpg);
+        }
+        
+        .container, .container-fluid {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="container" background-image="https://static.vecteezy.com/system/resources/previews/000/273/920/original/deep-ocean-background-vector.jpg">
+    
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">L33tH@xor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+            aria-controle="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./week9 home.html">Don't click here!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./week9 don't click here!.html">Nor this one!</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class ="nav-link dropdown-toggle" href="#" id="navbarNavDropdownMenuLink" role="button" 
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Secrets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarNavDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Pew Pew</a>
+                        <a class="dropdown-item" href="#">Lazers</a>
+                        <a class="dropdown-item" href="#">??????</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <form action="/action_page.php">
+        <div class="alert alert-primary">
+            Did you enjoy the content?
+        </div>
+        <input type="text" id="fname" name="fname" placeholder="Yes or No"><br>
+        <div class="alert alert-success">
+            Great success~!  
+        </div>
+        <input type="text" id="lname" name="lname" placeholder="Borat reference"><br><br>
+        <button class="btn btn-danger">Emergency button</button><br><br>
+    </form> 
+    <!--only difference / addition on this page is the this form above. instead of using previously used labels, used bootstrap alerts + 
+    one of the buttons mentioned in class material-->
+    
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
